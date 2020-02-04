@@ -5,11 +5,11 @@ public class CuSum {
     // a simple program to calculate a cumulative sum
     // using a recursive method call
 
-    static BufferedReader In = new BufferedReader( new
+    private static BufferedReader In = new BufferedReader( new
             InputStreamReader(System.in));
 
     // for comparison, here is an iterative version
-    public static int iterativeCuSum(int n){
+    private static int iterativeCuSum(int n){
         int result = 0;
 
         for(int i = 0; i <= n; i++)
@@ -18,7 +18,7 @@ public class CuSum {
     }
 
     // here is the recursive version
-    public static int recursiveCuSum(int n) {
+    private static int recursiveCuSum(int n) {
         if (n == 1)
             return 1;
         else
@@ -27,7 +27,7 @@ public class CuSum {
 
 
 
-    public static void main(String args[]) throws java.io.IOException{
+    public static void main(String[] args) throws java.io.IOException{
 
         System.out.print("Enter a number (0 to quit): ");
         int number = Integer.parseInt(In.readLine());

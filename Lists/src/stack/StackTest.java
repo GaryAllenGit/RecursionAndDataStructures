@@ -1,12 +1,8 @@
 package stack;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Iterator;
-
 public class StackTest {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Stack s = new Stack();
 
         s.addEntry("This");

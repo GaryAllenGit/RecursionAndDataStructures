@@ -1,10 +1,10 @@
 package queue;
 
-public class QueueNode {
-    public String dataItem;
-    public QueueNode next;
+class QueueNode {
+    String dataItem;
+    QueueNode next;
 
-    public QueueNode(String entry){
+    QueueNode(String entry){
         dataItem = entry;
         next = null;
     }

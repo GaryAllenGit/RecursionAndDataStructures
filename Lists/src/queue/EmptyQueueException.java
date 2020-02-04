@@ -1,10 +1,10 @@
 package queue;
 
-public class EmptyQueueException extends Exception {
-    public EmptyQueueException(){               // constructor which does nothing
+class EmptyQueueException extends Exception {
+    EmptyQueueException(){               // constructor which does nothing
     }
 
-    public EmptyQueueException(String message){ // constructor with error message handling
+    EmptyQueueException(String message){ // constructor with error message handling
         super(message);
     }
 }

@@ -1,7 +1,7 @@
 package queue;
 
 public class QueueTest {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Queue q = new Queue();
 
         q.addEntry("This");

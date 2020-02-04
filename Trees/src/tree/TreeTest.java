@@ -1,7 +1,7 @@
 package tree;
 
 public class TreeTest {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Tree wordTree = new Tree();
 
         wordTree.add("This");

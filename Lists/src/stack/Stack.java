@@ -1,22 +1,22 @@
 package stack;
 
-public class Stack {
-    StackNode top;
+class Stack {
+    private StackNode top;
 
-    public Stack() {
+    Stack() {
         top = null;
     }
 
-    public void addEntry(String entry) {
+    void addEntry(String entry) {
         StackNode temporary = top;
         top = new StackNode(entry);
         top.next = temporary;
     }
 
 
-    public String getEntry() throws EmptyStackException {
+    String getEntry() throws EmptyStackException {
         if (top == null)
-            throw new EmptyStackException();
+            throw new EmptyStackException("Empty Stack");
         else {
             String result = top.dataItem;
             top = top.next;

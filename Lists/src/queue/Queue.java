@@ -1,14 +1,14 @@
 package queue;
 
-public class Queue {
+class Queue {
 
-    QueueNode top;
+    private QueueNode top;
 
-    public Queue() {
+    Queue() {
         top = null;
     }
 
-    public void addEntry(String entry) {
+    void addEntry(String entry) {
         top = addToList(top, entry);
     }
 
@@ -21,9 +21,9 @@ public class Queue {
         }
     }
 
-    public String getEntry() throws EmptyQueueException {
+    String getEntry() throws EmptyQueueException {
         if (top == null)
-            throw new EmptyQueueException();
+            throw new EmptyQueueException("Empty Queue");
         else {
             String result = top.dataItem;
             top = top.next;

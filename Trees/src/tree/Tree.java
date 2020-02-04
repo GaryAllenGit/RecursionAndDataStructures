@@ -1,13 +1,13 @@
 package tree;
 
-public class Tree {
-    TreeNode root;
+class Tree {
+    private TreeNode root;
 
-    public Tree(){
+    Tree(){
         root = null;
     }
 
-    public void add(String newWord){
+    void add(String newWord){
         root = addNewNode(root, newWord);
     }
 
@@ -23,14 +23,12 @@ public class Tree {
         }
     }
 
-    public void display(){
+    void display(){
         displayTree(root);
     }
 
     private void displayTree(TreeNode N){
-        if (N == null)
-            return;
-        else{
+        if (N != null) {
             displayTree(N.left);
             System.out.println(N.dataItem);
             displayTree(N.right);
